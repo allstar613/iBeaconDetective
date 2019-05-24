@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>獎章</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid *ngIf="isGetData">
+    <ion-row>
+      <ion-col col-2>
+        Lv: {{UserList[update_index].UserLv}}
+      </ion-col>
+      <ion-col col-3>
+        經驗值：
+      </ion-col>
+      <ion-col col-7.5>
+        <progress-bar [progress]="loadProgress"></progress-bar>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid *ngIf="isGetData">
+    <ion-segment [(ngModel)]="medalType">
+      <ion-segment-button value="onGet">
+        未獲得
+      </ion-segment-button>
+      <ion-segment-button value="Get">
+        已獲得
+      </ion-segment-button>
+    </ion-segment>
+  </ion-grid>
+
+  <ion-list *ngIf="medalType==='onGet' && isMatchDone">
+    <ion-item-sliding *ngFor="let medal of MedalDidnot; let i = index">
+      <button ion-item (click)="GotOngottonDetail(i)">
+        <ion-avatar>
+          <img src="https://firebasestorage.googleapis.com/v0/b/treasurehunting-1499113897925.appspot.com/o/%E7%8D%8E%E7%AB%A0%2F%E7%8D%8E%E7%AB%A0_%E5%B0%9A%E6%9C%AA%E5%8F%96%E5%BE%97.png?alt=media&token=363bda5c-2ff6-4f45-be52-13bc641f7ad1"
+          />
+        </ion-avatar>
+        <p item-end>{{medal.MedalName}}</p>
+      </button>
+    </ion-item-sliding>
+  </ion-list>
+
+
+  <ion-list *ngIf="medalType==='Get' && isMatchDone">
+    <ion-item-sliding *ngFor="let medal of MedalDone; let i = index">
+      <button ion-item (click)="GotGottonDetail(i)">
+        <ion-avatar>
+          <img src="{{medal.MedalURL}}" />
+        </ion-avatar>
+        <p item-end>{{medal.MedalName}}</p>
+      </button>
+
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

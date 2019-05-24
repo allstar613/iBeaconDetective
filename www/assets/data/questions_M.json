@@ -1,0 +1,78 @@
+{
+    "questions": [
+        {
+            "QuizNo": 1,
+            "questionText": "警方告知我們，第一發現者似乎是一位管理學院的女學生，那麼她最有可能是哪一個科系的學生？",
+            "answers": [
+                {
+                    "answer": "工業與技職教育學系",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "人力資源管理研究所",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "企業管理學系",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "QuizNo": 2,
+            "questionText": "(承上)我們依照警方所提供的資訊，我們必須要到管理學院哪一層樓比較有機會找到該名學生？",
+            "answers": [
+                {
+                    "answer": "4F",
+                    "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "5F",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "6F",
+                    "correct": false,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "QuizNo": 3,
+            "questionText": "第一發現者的女學生跟我們表示，她那天晚上她原本要去系上拿忘了的東西，在B門禁卡時，好像有個古怪的人正在等人開門，因為他將帽T的帽子拉得很低，所以看不太清楚，而那個人比較有可能是哪一個系的學生？",
+            "answers": [
+                {
+                    "answer": "機電工程系",
+                    "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "電信工程研究所",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "資訊工程學系",
+                    "correct": false,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "QuizNo": 4,
+            "questionText": "第一發現者的女生表示說，因為那個人神情古怪，所以有注意他一下，依稀記得他是往管理學院正門口的方向直直走去。",
+            "answers": [
+                {
+                    "answer": "了解",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        }
+    ]
+}

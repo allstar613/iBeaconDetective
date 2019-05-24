@@ -1,0 +1,30 @@
+<!--
+  Generated template for the TeamInfoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="hcolor">
+    <ion-title>隊伍資訊</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list no-lines>
+    <ion-list-header>
+      組隊成員
+    </ion-list-header>
+    <ion-item *ngFor="let item of groupmembers">
+      <ion-avatar item-left>
+        <img src="{{item.UserPhotoURL}}">
+      </ion-avatar>
+      <h2>{{item.UserName}}</h2>
+      <p>Member</p>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

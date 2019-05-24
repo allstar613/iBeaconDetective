@@ -1,0 +1,21 @@
+page-leaderboard {
+
+    .h2 {
+      left: 0px;
+      bottom: 0px;
+      font-size: 20px;
+    }
+    .grid-full ion-row {
+        height: 100%;
+        padding: 0;
+        flex-wrap: wrap;
+        background-color: #C5DCFC;
+      }
+      .isMe {
+        background-color: #A0C5FA;
+      }
+      .row{
+        align-items: center;
+      }
+    }
+

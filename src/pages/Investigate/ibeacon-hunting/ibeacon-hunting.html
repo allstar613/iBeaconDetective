@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>偵查</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid *ngIf="isGetData">
+    <ion-row>
+      <ion-col col-2>
+        Lv: {{UserList[update_index].UserLv}}
+      </ion-col>
+      <ion-col col-3>
+        經驗值：
+      </ion-col>
+      <ion-col col-7.5>
+        <progress-bar [progress]="loadProgress"></progress-bar>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <div #map id="map"></div>
+
+</ion-content>

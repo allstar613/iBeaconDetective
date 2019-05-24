@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>任務</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-grid *ngIf="isGetData">
+    <ion-row>
+      <ion-col col-2>
+        Lv: {{UserList[update_index].UserLv}}
+      </ion-col>
+      <ion-col col-3>
+        經驗值：
+      </ion-col>
+      <ion-col col-7.5>
+        <progress-bar [progress]="loadProgress"></progress-bar>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list *ngIf="missionType==='Clear' && isMatchDone">
+    <ion-item-sliding *ngFor="let mission of MissionDone; let i = index">
+      <button ion-item (click)="GotGottonDetail(i)">
+        <p>{{mission.MissionName}}</p>
+        <p item-end>(1/1)</p>
+      </button>
+    </ion-item-sliding>
+  </ion-list>
+
+
+  <ion-list *ngIf="missionType==='onClear' && isMatchDone">
+    <ion-item-sliding *ngFor="let mission of MissionDidnot; let i = index">
+      <button ion-item (click)="GotOngottonDetail(i)">
+        <p>{{mission.MissionName}}</p>
+        <p item-end>(0/1)</p>
+      </button>
+    </ion-item-sliding>
+  </ion-list>
+
+</ion-content>
+
+<ion-footer padding>
+  <ion-segment [(ngModel)]="missionType">
+    <ion-segment-button value="onClear">
+      未完成任務
+    </ion-segment-button>
+    <ion-segment-button value="Clear">
+      已完成任務
+    </ion-segment-button>
+  </ion-segment>
+</ion-footer>

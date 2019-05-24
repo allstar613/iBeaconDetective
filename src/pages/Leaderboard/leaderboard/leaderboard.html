@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>排行榜</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid *ngIf="isGetData">
+    <ion-row>
+      <ion-col col-2>
+        Lv: {{UserList[update_index].UserLv}}
+      </ion-col>
+      <ion-col col-3>
+        經驗值：
+      </ion-col>
+      <ion-col col-7.5>
+        <progress-bar [progress]="loadProgress"></progress-bar>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list *ngFor="let player of UserList; let i = index">
+    <ion-item *ngIf="i===update_index" class="isMe">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-1>
+            <h2>{{i+1}}</h2>
+          </ion-col>
+          <ion-col col-2>
+            <ion-avatar>
+              <img src="{{player.UserPhotoURL}}" />
+            </ion-avatar>
+          </ion-col>
+          <ion-col col-5>
+            <h2>{{player.UserName}}</h2>
+          </ion-col>
+          <ion-col col-4>
+            <h2>point: {{player.UserPoint}}</h2>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item *ngIf="i!=update_index">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-1>
+            <h2>{{i+1}}</h2>
+          </ion-col>
+          <ion-col col-2>
+            <ion-avatar>
+              <img src="{{player.UserPhotoURL}}" />
+            </ion-avatar>
+          </ion-col>
+          <ion-col col-5>
+            <h2>{{player.UserName}}</h2>
+          </ion-col>
+          <ion-col col-4>
+            <h2>point: {{player.UserPoint}}</h2>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

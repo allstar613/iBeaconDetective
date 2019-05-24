@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>搜查證</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="user">
+  <ion-grid *ngIf="isGetData">
+    <ion-row>
+      <ion-col col-2>
+        Lv: {{UserList[update_index].UserLv}}
+      </ion-col>
+      <ion-col col-3>
+        經驗值：
+      </ion-col>
+      <ion-col col-7.5>
+        <progress-bar [progress]="loadProgress"></progress-bar>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-card *ngIf="isGetData">
+
+    <ion-card-content>
+      <img src="{{UserList[update_index].UserPhotoURL}}" />
+      <h2>{{UserList[update_index].UserName}}</h2>
+    </ion-card-content>
+
+    <ion-list>
+      <a ion-item>
+        <ion-icon name="medical" item-left></ion-icon>
+        <p>Point</p>
+        <h2>{{UserList[update_index].UserPoint}}</h2>
+      </a>
+      <a ion-item>
+        <ion-icon name="pulse" item-left></ion-icon>
+        <p>Exp</p>
+        <h2>{{UserList[update_index].UserExp}} / {{Exp_sum}}</h2>
+      </a>
+    </ion-list>
+
+    <ion-list>
+      <ion-item *ngIf="isMatchDone">
+        <ion-grid>
+          <ion-row>
+            <ion-col col-5>
+            </ion-col>
+            <ion-col col-4>
+              <p>獎章</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-3 *ngFor="let medal of MedalDone; let i = index">
+              <img src="{{medal.MedalURL}}" (click)="GotGottonDetail(i)" />
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>

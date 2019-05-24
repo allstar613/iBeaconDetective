@@ -1,0 +1,78 @@
+{
+    "questions": [
+        {
+            "QuizNo": 1,
+            "questionText": "您接獲通知得知，有一名學生聲稱他手頭上有些許線索，要請我們過去寶山校區的咖啡廳那邊與他碰面，請問我們該往哪邊去？",
+            "answers": [
+                {
+                    "answer": "工學院大樓",
+                    "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "力行館",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "教學一館",
+                    "correct": false,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "QuizNo": 2,
+            "questionText": "在咖啡廳依約碰到一名工學院的博士生，他首先拿出學生證以及身分證表明身分，請問他最有可能是哪個系所的學生？",
+            "answers": [
+                {
+                    "answer": "機電工程學系",
+                    "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "資訊工程學系",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "電子工程學系",
+                    "correct": false,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "QuizNo": 3,
+            "questionText": "正當要準備詢問線索時，咖啡廳的工讀生插話說，前幾天死者有跟一個男生在咖啡廳附近大吵，是一個淡紫色頭髮帶眼鏡的男生，而且很常在第九宿舍碰到他，請問那個男生不太可能是什麼系所的學生？",
+            "answers": [
+                {
+                    "answer": "物理系",
+                    "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "資訊工程學系",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "電子工程學系",
+                    "correct": false,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "QuizNo": 4,
+            "questionText": "這名博士生告訴我們，那個男生應該是死者的男朋友，是他們系上的學弟，前幾個禮拜就有耳聞他們小倆口鬧的十分不愉快，當天晚上該名學弟在8點多左右就面色凝重的離開實驗室。",
+            "answers": [
+                {
+                    "answer": "了解",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        }
+    ]
+}

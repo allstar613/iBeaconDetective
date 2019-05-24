@@ -1,0 +1,78 @@
+{
+    "questions": [
+        {
+            "QuizNo": 1,
+            "questionText": "在人工湖旁發現染血的凶器之後，警方開始調查力行館門口的監視器，在可能犯案的時段內，共拍到有三個人從力行館左邊走到右邊。",
+            "answers": [
+                {
+                    "answer": "經世館",
+                    "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "教學一館",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "網球場",
+                    "correct": false,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "QuizNo": 2,
+            "questionText": "此時在一旁有個綠色頭髮，自稱是工學院學生的男生突然大叫一聲，請問這個男學生最有可能是哪個科系的學生？",
+            "answers": [
+                {
+                    "answer": "資訊工程學系",
+                    "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "行銷與流通管理研究所",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "光電科技研究所 ",
+                    "correct": false,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "QuizNo": 3,
+            "questionText": "他說道，他對畫面中有個男生有印象，他在當晚有看到他急急忙忙的跑往地下道，請問他最有可能是要跑到哪裡去？",
+            "answers": [
+                {
+                    "answer": "第九宿舍",
+                    "correct": true,
+                    "selected": false
+                },
+                {
+                    "answer": "網球場",
+                    "correct": false,
+                    "selected": false
+                },
+                {
+                    "answer": "教學一館 ",
+                    "correct": false,
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "QuizNo": 4,
+            "questionText": "那個綠髮男生說，時間大概是10點出頭，那個男生急急忙忙的不知道是在幹嘛，還差點撞倒我還有我的宵夜。",
+            "answers": [
+                {
+                    "answer": "了解",
+                    "correct": true,
+                    "selected": false
+                }
+            ]
+        }
+    ]
+}
